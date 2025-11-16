@@ -1,0 +1,70 @@
+
+# Initialize Git repository
+git init
+
+# Create .gitignore file
+echo "# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env*.local
+.env
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+Thumbs.db" > .gitignore
+
+# Add all files to Git
+git add .
+
+# Create initial commit
+git commit -m "Initial commit: Notes App Frontend
+
+- Next.js 14 with TypeScript
+- Tailwind CSS styling
+- Authentication with JWT
+- Admin dashboard functionality
+- CRUD operations for notes
+- Role-based access control"
+
+# Create and switch to main branch (if not on main)
+git branch -M main
+
+# Add remote repository (replace with your GitHub repo)
+git remote add origin https://github.com/YOUR_USERNAME/notes-app-frontend.git
+
+# Push to remote
+git push -u origin main
